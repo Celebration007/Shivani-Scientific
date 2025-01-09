@@ -1,0 +1,104 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Top banner styles */
+.banner {
+    width: 100%;
+    background: url('bg01.jpg') no-repeat center center; /* Ensure focus remains in the center */
+    background-size: cover; /* Ensure the image covers the area proportionally */
+    padding-top: 10%; /* Adjust the percentage to control the height-to-width ratio */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px; /* Adjust gap between items */
+    flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+    padding: 50px; /* Add some padding for better spacing */
+    padding-top: 150px;
+}
+
+/* Apply styles to the main container */
+.container button {
+    background-color: #21408f;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 25px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 7px 5px 0px rgba(0, 0, 0, 0.1);
+    
+}
+
+.container button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    background-color: #3957a4;
+    color: #fff;
+}
+
+/* Style for the images */
+.image {
+    width: 150px; /* Set a base size for the images */
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 7px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* Add hover effects */
+.image:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+
+/* Small devices (mobiles, 600px and below) */
+@media screen and (max-width: 600px) {
+    .banner {
+        padding-top: 40%; /* Increase the padding-top for smaller screens to maintain proportional height */
+    }
+
+    .container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center images horizontally */
+        gap: 20px; /* Adjust gap for small screens */
+    }
+
+    .image {
+        width: 50%; /* Images take most of the screen width */
+    }
+}
+
+/* Medium devices (tablets, between 601px and 1024px) */
+@media screen and (max-width: 1024px) {
+    .banner {
+        padding-top: 10%; /* Adjust padding-top for medium screens */
+    }
+
+    .container {
+        gap: 30px; /* Adjust spacing for tablets */
+    }
+
+    .image {
+        width: 250px; /* Resize images for tablets */
+    }
+}
+
+/* Large devices (desktops, 1025px and above) */
+@media screen and (min-width: 1025px) {
+    .banner {
+        padding-top: 10%; /* Standard height-to-width ratio for larger screens */
+    }
+
+    .image {
+        width: 300px; /* Default image size for larger screens */
+    }
+}

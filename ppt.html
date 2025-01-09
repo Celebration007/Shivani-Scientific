@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richard Wolf</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="banner">
+        <!-- Background image is set as a top banner via CSS -->
+    </header>
+    <main class="container">
+        <a class="house-link" href="index.html">
+            <img src="house.png" alt="Home" style="width: 45px; height: 45px;">
+        </a>
+
+        <div style="display:flex; flex-direction:column; gap: 20px;">
+        <div class="thumbnails">
+            <button onclick="openModal('Presentations\\Shivani_Coffee_table_book.pdf')">
+                <img src="Presentations\Shivani_Coffee_table_book.jpg" alt="PDF 1 Thumbnail">
+            </button>
+            <button onclick="openModal('Presentations\\NAMAHA_Mumbai.pdf')">
+                <img src="Presentations\NAMAHA_Mumbai.jpg" alt="PDF 2 Thumbnail">
+            </button>
+            <button onclick="openModal('Presentations\\Fertility_Point_Kenya.pdf')">
+                <img src="Presentations\Fertility_Point_Kenya.jpg" alt="PDF 3 Thumbnail">
+            </button>
+            <button onclick="openModal('Presentations\\Creating_a_Legacy_in_Fertility_Care.pdf')">
+                <img src="Presentations\Creating_a_Legacy_in_Fertility_Care.jpg" alt="PDF 4 Thumbnail">
+            </button>
+            <button onclick="openModal('Presentations\\CLINIQUE_St_JEREMIE.pdf')">
+                <img src="Presentations\CLINIQUE_St_JEREMIE.jpg" alt="PDF 4 Thumbnail">
+            </button>
+            <button onclick="openModal('\Presentations\\CLINIQUE_BIASA_TOGO_IVF.pdf')">
+                <img src="Presentations\CLINIQUE_BIASA_TOGO_IVF.jpg" alt="PDF 4 Thumbnail">
+            </button>
+            
+        </div>
+        </div>
+
+    </main>
+
+    <!-- Modal for PDF display -->
+    <div id="pdf-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <iframe id="pdf-frame" src="" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

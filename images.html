@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images_Shivani_Scientific</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <header class="banner">
+        <!-- Background image is set as a top banner via CSS -->
+    </header>
+    <main class="container">
+        <a class="house-link" href="index.html">
+            <img src="house.png" alt="Home" style="width: 45px; height: 45px;">
+        </a>
+
+        <div class="thumbnails">
+            <button onclick="openModal('Images\\1.pdf')">
+                <img src="Images\\1.jpg" alt="PDF 1 Thumbnail">
+            </button>
+            <button onclick="openModal('Images\\2.pdf')">
+                <img src="Images\\2.jpeg" alt="PDF 1 Thumbnail">
+            </button>
+            <button onclick="openModal('Images\\3.pdf')">
+                <img src="Images\\3.jpg" alt="PDF 1 Thumbnail">
+            </button>
+            <button onclick="openModal('Images\\4.pdf')">
+                <img src="Images\\4.jpg" alt="PDF 1 Thumbnail">
+            </button>
+            <button onclick="openModal('Images\\5.pdf')">
+                <img src="Images\\5.jpg" alt="PDF 1 Thumbnail">
+            </button>
+            <button onclick="openModal('Images\\6.pdf')">
+                <img src="Images\\6.jpg" alt="PDF 1 Thumbnail">
+            </button>
+            <button onclick="openModal('Images\\7.pdf')">
+                <img src="Images\\7.jpg" alt="PDF 1 Thumbnail">
+            </button>
+            <button onclick="openModal('Images\\8.pdf')">
+                <img src="Images\\8.jpg" alt="PDF 1 Thumbnail">
+            </button>
+            <button onclick="openModal('Images\\9.pdf')">
+                <img src="Images\\9.jpg" alt="PDF 1 Thumbnail">
+            </button>
+            <button onclick="openModal('Images\\10.pdf')">
+                <img src="Images\\10.jpeg" alt="PDF 1 Thumbnail">
+            </button>
+            <button onclick="openModal('Images\\11.pdf')">
+                <img src="Images\\11.jpg" alt="PDF 1 Thumbnail">
+            </button>
+            <button onclick="openModal('Images\\12.pdf')">
+                <img src="Images\\12.jpg" alt="PDF 1 Thumbnail">
+            </button>
+            <button onclick="openModal('Images\\13.pdf')">
+                <img src="Images\\13.png" alt="PDF 1 Thumbnail">
+            </button>
+            <button onclick="openModal('Images\\14.pdf')">
+                <img src="Images\\14.png" alt="PDF 1 Thumbnail">
+            </button>
+            <button onclick="openModal('Images\\15.pdf')">
+                <img src="Images\\15.png" alt="PDF 1 Thumbnail">
+            </button>
+            <button onclick="openModal('Images\\16.pdf')">
+                <img src="Images\\16.png" alt="PDF 1 Thumbnail">
+            </button>
+            <button onclick="openModal('Images\\17.pdf')">
+                <img src="Images\\17.png" alt="PDF 1 Thumbnail">
+            </button>
+            <button onclick="openModal('Images\\18.pdf')">
+                <img src="Images\\18.png" alt="PDF 1 Thumbnail">
+            </button>
+            <button onclick="openModal('Images\\19.pdf')">
+                <img src="Images\\19.png" alt="PDF 1 Thumbnail">
+            </button>
+        </div>
+    </main>
+
+    <!-- Modal for PDF display -->
+    <div id="pdf-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <iframe id="pdf-frame" src="" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

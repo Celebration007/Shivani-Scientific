@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video_Shivani_Scientific</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+    <header class="banner">
+        <!-- Background image is set as a top banner via CSS -->
+    </header>
+    <main class="container">
+        <a class="house-link" href="index.html">
+            <img src="house.png" alt="Home" style="width: 45px; height: 45px;">
+        </a>
+
+        <div class="thumbnails">
+            <button onclick="openModal('NMC lab video.mp4')">
+                <img src="Videos\Project Videos\1.jpg" alt="Video1">
+            </button>
+            <button onclick="openModal('Videos\\Project Videos\\BURUNDI INSTALLATION  VIDEO.mp4')">
+                <img src="Videos\Project Videos\2.png" alt="Video2">
+            </button>
+            <button onclick="openModal('Videos\\Project Videos\\Pune - DPU IVF & Endoscopy Center _ One of Indias Most Advanced IVF Center.mp4')">
+                <img src="Videos\Project Videos\3.png" alt="Video3">
+            </button>            
+            <button onclick="openModal('Videos\\Project Videos\\St- Paul Walk through.mp4')">
+                <img src="Videos\Project Videos\4.png" alt="Video4">
+            </button>
+
+
+            <button onclick="openModal('Videos\\Shivani Capabilities & Product\\23B Manufacturing Video.mp4')">
+                <img src="Videos\Shivani Capabilities & Product\1Manfg.png" alt="Video4">
+            </button>
+            <button onclick="openModal('Videos\\Shivani Capabilities & Product\\Gas Calibration Facility.mp4')">
+                <img src="Videos\Shivani Capabilities & Product\2GCF.png" alt="Video1">
+            </button>
+            <button onclick="openModal('Videos\\Shivani Capabilities & Product\\IRC.mp4')">
+                <img src="Videos\Shivani Capabilities & Product\3IRC.png" alt="Video1">
+            </button>
+            <button onclick="openModal('Videos\\Shivani Capabilities & Product\\Labcare video.mp4')">
+                <img src="Videos\Shivani Capabilities & Product\4labcare.png" alt="Video1">
+            </button>
+            <button onclick="openModal('Videos\\Shivani Capabilities & Product\\lilvac_500_oa_120_sec_master.mp4')">
+                <img src="Videos\Shivani Capabilities & Product\5lilvac.png" alt="Video1">
+            </button>
+            <button onclick="openModal('Videos\\Shivani Capabilities & Product\\Shivani Spermfuge Final Video_14_03_22.mp4')">
+                <img src="Videos\Shivani Capabilities & Product\6Spermfuge.png" alt="Video1">
+            </button>
+
+        </div>
+    </main>
+
+    <!-- Modal for PDF display -->
+    <div id="pdf-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <iframe id="pdf-frame" src="" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

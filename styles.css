@@ -1,0 +1,154 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Top banner styles */
+.banner {
+    width: 100%;
+    background: url('bg01.jpg') no-repeat center center; /* Ensure focus remains in the center */
+    background-size: cover; /* Ensure the image covers the area proportionally */
+    padding-top: 10%; /* Adjust the percentage to control the height-to-width ratio */
+}
+
+/* Apply styles to the main container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; /* Adjust gap between items */
+    flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+    padding: 50px; /* Add some padding for better spacing */
+}
+
+/* Add hover effects */
+.image:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.house-link {
+    position: absolute;
+    top: 170px;
+    right: 40px;
+}
+
+.thumbnails {
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;  
+}
+
+.thumbnails button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    
+}
+
+.thumbnails img {
+    width: 300px;
+    height: auto;
+    transition: transform 0.2s ease;
+    
+}
+
+.thumbnails img:hover {
+    transform: scale(1.1);
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Black background with transparency */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    position: relative;
+    width: 80%;
+    max-width: 900px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    max-height: 90%; /* Ensure it fits within the screen */
+}
+
+.modal-content iframe {
+    width: 100%;
+    height: 500px; /* Adjust height for the iframe */
+    border: none;
+}
+
+.close {
+    position: absolute;
+    top: 14px;
+    right: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #ff0000;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: red;
+}
+
+
+/* Responsive Design */
+
+/* Small devices (mobiles, 600px and below) */
+@media screen and (max-width: 600px) {
+    .banner {
+        padding-top: 40%; /* Increase the padding-top for smaller screens to maintain proportional height */
+    }
+
+    .container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center images horizontally */
+        gap: 20px; /* Adjust gap for small screens */
+    }
+
+    .image {
+        width: 50%; /* Images take most of the screen width */
+    }
+}
+
+/* Medium devices (tablets, between 601px and 1024px) */
+@media screen and (max-width: 1024px) {
+    .banner {
+        padding-top: 10%; /* Adjust padding-top for medium screens */
+    }
+
+    .container {
+        gap: 30px; /* Adjust spacing for tablets */
+    }
+
+    .image {
+        width: 250px; /* Resize images for tablets */
+    }
+}
+
+/* Large devices (desktops, 1025px and above) */
+@media screen and (min-width: 1025px) {
+    .banner {
+        padding-top: 10%; /* Standard height-to-width ratio for larger screens */
+    }
+
+    .image {
+        width: 300px; /* Default image size for larger screens */
+    }
+}
